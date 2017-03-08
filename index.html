@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div class="text-bubble-container">
+            <div class="text">
+                Multiple lines force inline-blocks to take maximum available width,
+                which may lead to 'extra' space in case of long words
+                (i.e. two words, each takes slightly more than a half of the bubble).
+                This is what happens in the first case.
+            </div>
+            <div class="text">
+                The second case presents a fix for that using js.
+            </div>
+            <div class="text-bubble"></div>
+            <br />
+            <div class="text-bubble text-bubble_width-hacked"></div>
+            <br />
+            <textarea class="text-input" placeholder="Input text to see both variants"></textarea>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
